@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f8c8dc">
+  <title>Happy Birthday Vivena 🤍</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="sparkles" aria-hidden="true"></div>
+  <header class="topbar">
+    <span>♡ A Special Surprise</span>
+    <button class="menu" id="menuBtn" aria-label="Show page list">☰</button>
+  </header>
+  <nav class="page-menu" id="pageMenu">
+    <button data-go="0">Welcome</button><button data-go="1">Birthday</button>
+    <button data-go="2">Memories</button><button data-go="3">Love letter</button>
+    <button data-go="4">A gift</button><button data-go="5">For you</button>
+    <button data-go="6">Playlist</button><button data-go="7">Final surprise</button>
+  </nav>
+
+  <main>
+    <section class="page active welcome">
+      <div class="moon">☾</div><div class="crown">♕</div>
+      <p class="eyebrow">Hey Beautiful</p>
+      <h1>VIVENA <span>🤍</span></h1>
+      <h2>(My Cutie Angel 👰🏻)</h2>
+      <p class="intro">Today is not just your birthday...<br>it's a celebration of the beautiful person you are.</p>
+      <button class="primary next">Click to Begin ♥</button>
+      <p class="bottom-note">You make everything brighter ♡</p>
+    </section>
+
+    <section class="page birthday">
+      <p class="eyebrow">A day made just for you</p>
+      <h1>Happy Birthday<br><span>Vivena 🤍</span></h1>
+      <p>May your day be filled with happiness, love, and all the little things that make you smile.</p>
+      <div class="cake" aria-label="Birthday cake">🕯️🕯️🕯️<br><span>🎂</span></div>
+      <p class="smallcaps">GORGEOUS　♡　KIND　♡　LOVED　♡　UNIQUE</p>
+      <button class="primary next">See our memories ♥</button>
+    </section>
+
+    <section class="page memories">
+      <p class="eyebrow">Some moments, just for you...</p>
+      <h1>Our Memories 📸</h1>
+      <div class="gallery">
+        <figure><img src="images/photo1.jpg" alt="Memory photo 1"><figcaption>Memory 1</figcaption></figure>
+        <figure><img src="images/photo2.jpg" alt="Memory photo 2"><figcaption>Memory 2</figcaption></figure>
+        <figure><img src="images/photo3.jpg" alt="Memory photo 3"><figcaption>Memory 3</figcaption></figure>
+        <figure><img src="images/photo4.jpg" alt="Memory photo 4"><figcaption>Memory 4</figcaption></figure>
+        <figure><img src="images/photo5.jpg" alt="Memory photo 5"><figcaption>Memory 5</figcaption></figure>
+        <figure><img src="images/photo6.jpg" alt="Memory photo 6"><figcaption>Memory 6</figcaption></figure>
+        <figure><img src="images/photo7.jpg" alt="Memory photo 7"><figcaption>Memory 7</figcaption></figure>
+      </div>
+      <p class="caption">7 special photos... 7 beautiful moments...<br>But my favorite moment is YOU ♡</p>
+      <button class="primary next">Read my letter ♥</button>
+    </section>
+
+    <section class="page letter">
+      <p class="eyebrow">A little message from my heart</p>
+      <article class="letter-card">
+        <h1>My Dearest Vivena,</h1>
+        <p>I'm so lucky to have you in my life. Your smile makes ordinary moments feel special, and your kindness makes the world brighter.</p>
+        <p>I hope this new year of your life brings you endless happiness, beautiful memories, and dreams that come true.</p>
+        <p>Keep smiling, keep shining, and always remember how special you are.</p>
+        <p class="sign">With all my heart,<br><strong>Kiran 🤍</strong></p>
+      </article>
+      <button class="primary next">Next surprise ♡</button>
+    </section>
+
+    <section class="page gift">
+      <p class="eyebrow">Here's a little gift</p>
+      <h1>For the most special girl in my life...</h1>
+      <button class="giftbox" id="giftBtn" aria-label="Open the gift"><span>🎁</span><small>Tap to open</small></button>
+      <p id="giftMessage" class="gift-message">A little surprise is waiting for you ♡</p>
+      <button class="primary next">One more thing ♥</button>
+    </section>
+
+    <section class="page for-you">
+      <p class="eyebrow">Just for you</p>
+      <h1>Vivena...</h1>
+      <p class="big-quote">You are not just a part of my day, you make every day brighter. ♡</p>
+      <div class="promises">
+        <p>♡ Keep smiling</p><p>♡ Keep shining</p><p>♡ Keep being you</p>
+        <p>♡ Never forget how amazing you are</p>
+      </div>
+      <button class="primary next">A little music ♡</button>
+    </section>
+
+    <section class="page playlist">
+      <p class="eyebrow">A song for you</p>
+      <div class="record">♫<span>♡</span></div>
+      <h1>My Favorite Person</h1>
+      <p>(That's You 🤍)</p>
+      <p class="music-note">Add your favourite song here later if you want.</p>
+      <button class="primary next">Final surprise ✨</button>
+    </section>
+
+    <section class="page ending">
+      <p class="eyebrow">My final surprise</p>
+      <h1>Happy Birthday<br><span>Vivena 🤍</span></h1>
+      <p class="big-quote">I hope your dreams come true, not just today, but always.</p>
+      <p>I’m wishing you happiness today, tomorrow and every day. Keep being your lovely self.</p>
+      <div class="heart-glow">♡</div>
+      <h2>Forever & Always</h2>
+      <p class="sign">— Kiran 🤍</p>
+      <button class="primary" id="restartBtn">Watch again ↻</button>
+    </section>
+  </main>
+
+  <footer><span id="pageCount">1 / 8</span><div class="dots" id="dots"></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>

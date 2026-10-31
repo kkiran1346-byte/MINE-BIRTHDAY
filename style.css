@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap');
+:root{--pink:#f7a9c8;--deep:#642b59;--cream:#fff4f7;--gold:#f7d9a4}
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;font-family:'Nunito',Arial,sans-serif}
+body{color:#fff;background:linear-gradient(145deg,#251b46,#8d477e 48%,#f3a9bd);overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;z-index:-1;background:radial-gradient(circle at 20% 20%,#ffd5e8aa,transparent 30%),radial-gradient(circle at 80% 70%,#ffb6d366,transparent 35%),linear-gradient(135deg,#251b46,#89517e 55%,#f4b4c7)}
+.topbar{height:58px;display:flex;align-items:center;justify-content:space-between;padding:0 20px;position:relative;z-index:5;background:#160f2b44;backdrop-filter:blur(8px);font-size:14px}
+.menu{border:0;background:transparent;color:white;font-size:25px;cursor:pointer}
+.page-menu{display:none;position:absolute;right:14px;top:54px;z-index:10;padding:10px;border-radius:15px;background:#fff4f7;color:#642b59;box-shadow:0 8px 30px #1d102955}
+.page-menu.open{display:grid;grid-template-columns:1fr 1fr;gap:6px}.page-menu button{border:0;border-radius:9px;padding:9px;background:#f8dce8;color:#642b59;font:600 13px Nunito;cursor:pointer}
+main{min-height:calc(100vh - 105px);display:flex;justify-content:center;align-items:center;padding:20px 14px}
+.page{display:none;width:min(100%,720px);min-height:min(720px,calc(100vh - 150px));padding:35px 22px 28px;text-align:center;align-items:center;justify-content:center;flex-direction:column;position:relative;border:1px solid #ffffff55;border-radius:25px;overflow:hidden;background:linear-gradient(160deg,#ffffff22,#3a174b33);box-shadow:0 20px 60px #170b2b55;backdrop-filter:blur(7px)}
+.page.active{display:flex;animation:appear .55s ease}
+@keyframes appear{from{opacity:0;transform:translateY(12px) scale(.99)}to{opacity:1;transform:none}}
+.page:before,.page:after{content:"✿　♡　✧　🦋　✧　♡　✿";position:absolute;left:0;right:0;color:#ffe1ed99;font-size:17px;letter-spacing:8px;pointer-events:none}
+.page:before{top:14px}.page:after{bottom:12px}
+h1{font-size:clamp(27px,6vw,48px);line-height:1.12;margin:10px 0;color:#fff;font-weight:800;text-shadow:0 3px 20px #ffb5d988}
+h1 span{color:#fff0f5}.eyebrow{font-size:14px;letter-spacing:1.5px;text-transform:uppercase;color:#ffe4ef;margin:10px 0}
+h2{font-size:19px;margin:0 0 18px;font-weight:700}.intro,.page>p:not(.eyebrow){max-width:500px;line-height:1.7;font-size:16px}
+.welcome{background:linear-gradient(180deg,#251b46aa,#9e527d66),radial-gradient(circle at 50% 80%,#ffb5cb88,transparent 50%)}
+.welcome h1{font-size:clamp(48px,12vw,82px);letter-spacing:1px}.welcome h2{color:#fff1f6}
+.crown{font-size:42px;color:#ffe3a7}.moon{position:absolute;right:10%;top:12%;font-size:48px;color:#ffe7b9}
+.primary{border:1px solid #fff8;border-radius:40px;padding:13px 25px;margin-top:15px;background:linear-gradient(100deg,#fff4f7,#ffc5da);color:#9b3767;font:800 15px Nunito;box-shadow:0 5px 25px #ffb5d988;cursor:pointer}
+.primary:active,.giftbox:active{transform:scale(.97)}.bottom-note{position:absolute;bottom:50px;left:15px;font-size:13px;font-style:italic}
+.birthday{background:linear-gradient(180deg,#f6b7d2aa,#9c477a66),radial-gradient(circle,#fff5f7aa,transparent 65%)}
+.cake{font-size:35px;margin:15px 0 8px;line-height:1.1}.cake span{font-size:100px;filter:drop-shadow(0 8px 18px #4b173c66)}
+.smallcaps{font-size:11px!important;letter-spacing:1px;color:#ffe8f1}
+.memories{background:linear-gradient(160deg,#f5c7d9dd,#8d4a83cc)}
+.gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;width:min(100%,520px);margin:12px auto}
+.gallery figure{margin:0;padding:7px 7px 5px;background:#fff4f2;border-radius:7px;box-shadow:0 5px 15px #4c214455;transform:rotate(-1deg)}
+.gallery figure:nth-child(even){transform:rotate(1.5deg)}.gallery img{display:block;width:100%;height:105px;object-fit:cover;background:linear-gradient(135deg,#fbd9e7,#b87ca4);border-radius:3px}
+.gallery figcaption{color:#8c416d;font-size:11px;padding:4px}.caption{font-size:14px!important;margin:5px}
+.letter{background:linear-gradient(135deg,#35152cdd,#9a4569dd)}
+.letter-card{background:#fff0d9;color:#62433c;border-radius:7px;padding:25px 22px;text-align:left;max-width:520px;box-shadow:0 12px 35px #1b0b2c66;transform:rotate(-1deg);line-height:1.65}
+.letter-card h1{font-size:23px;color:#82455d;text-shadow:none}.letter-card p{font-size:14px}.sign{text-align:right;font-weight:700}
+.gift{background:linear-gradient(145deg,#251322dd,#8e3d68bb)}.giftbox{border:0;background:transparent;cursor:pointer;margin:20px}.giftbox span{display:block;font-size:125px;filter:drop-shadow(0 8px 18px #ffb2c5aa);transition:.3s}.giftbox:hover span{transform:translateY(-8px) rotate(-5deg)}.giftbox small{color:#ffe7ef;font:700 14px Nunito}.gift-message{min-height:28px}
+.for-you{background:linear-gradient(160deg,#453064dd,#d47c9f99)}.big-quote{font-size:23px!important;font-weight:700;max-width:500px;line-height:1.5}.promises{line-height:1.8;color:#fff2f6}
+.playlist{background:linear-gradient(145deg,#111a42,#45265f 60%,#9d4f86)}.record{width:170px;height:170px;border-radius:50%;display:grid;place-items:center;margin:20px;background:repeating-radial-gradient(circle,#1c1632 0 8px,#34234a 9px 11px);box-shadow:0 0 35px #ff8bc9aa;font-size:40px}.record span{position:absolute;font-size:30px;color:#ffb6d7}.music-note{font-size:13px!important;color:#ffe2ef}
+.ending{background:linear-gradient(160deg,#25183dcc,#a34e78aa)}.heart-glow{font-size:90px;color:#ffd7e8;text-shadow:0 0 20px #ff8bc9,0 0 45px #ff8bc9;animation:pulse 1.6s infinite}@keyframes pulse{50%{transform:scale(1.12)}}
+footer{height:47px;display:flex;align-items:center;justify-content:center;gap:18px;color:#fff;font-size:13px}.dots{display:flex;gap:6px}.dots button{width:7px;height:7px;border:0;border-radius:50%;background:#ffffff66;padding:0}.dots button.active{background:#fff;width:18px;border-radius:8px}
+.sparkles{position:fixed;inset:0;pointer-events:none;z-index:2;background-image:radial-gradient(#fff9 1px,transparent 1px),radial-gradient(#ffd6e8aa 1px,transparent 1px);background-size:70px 70px,110px 110px;background-position:0 0,30px 40px;opacity:.3}
+@media(min-width:650px){.page{padding:45px 40px}.gallery{grid-template-columns:repeat(4,1fr)}.gallery img{height:125px}}
+@media(max-height:720px){.page{min-height:0;padding:25px 18px}.gallery img{height:75px}.cake span{font-size:70px}.giftbox span{font-size:90px}}
+
+/* Readable, regular-weight typography with a soft darker plum tone */
+body{font-family:Arial,Helvetica,sans-serif}
+h1,h2,.eyebrow,.intro,.page>p,.letter-card,.gallery figcaption{font-family:Arial,Helvetica,sans-serif}
+h1{font-weight:700;letter-spacing:0;color:#57304f;text-shadow:none}
+h1 span{color:#70405f}
+.eyebrow{font-weight:600;letter-spacing:.5px;color:#68405d;text-transform:none}
+.page{color:#55364f}
+.birthday,.memories{color:#56304d}
+.birthday h1,.memories h1,.birthday .eyebrow,.memories .eyebrow,
+.birthday>p,.memories>p{color:#56304d}
+.welcome h1,.welcome h2,.welcome .eyebrow,.welcome .intro,.welcome .bottom-note,
+.letter h1,.letter .eyebrow,.letter>p,.gift h1,.gift .eyebrow,.gift>p,
+.playlist h1,.playlist .eyebrow,.playlist>p,.ending h1,.ending h2,.ending .eyebrow,.ending>p,
+.for-you h1,.for-you .eyebrow,.for-you>p,.for-you .promises{color:#fff4f8}
+.welcome h1,.letter h1,.gift h1,.playlist h1,.ending h1,.for-you h1{ text-shadow:0 2px 12px #24102b66 }
+.primary{font-family:Arial,Helvetica,sans-serif;font-weight:700}
